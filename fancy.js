@@ -4,7 +4,7 @@ function myFunction(e) {
   var elements = e.target.querySelectorAll(".info");
   console.log(elements);
   popup.classList.add("show");
-  var text = elements.first.firstChild.textContent;
+  var text = elements.firstChild.textContent;
   popup.classList.add("show");
   navigator.clipboard.writeText(text);
   setTimeout(function() {
