@@ -6,5 +6,6 @@ function myFunction() {
   popup.classList.remove("show");
 }, 2000);
 }
-
-window.onload(document.getElementById("clickable").addEventListener("click", myFunction));
+window.onload = function () {
+  document.getElementById("clickable").addEventListener("click", myFunction);
+};
