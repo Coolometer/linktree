@@ -4,7 +4,7 @@ function myFunction() {
   var elements = this.querySelector(".info");
   console.log(elements);
   popup.classList.add("show");
-  var text = elements[0].textContent;
+  var text = Array.from(elements)[0].textContent;
   popup.classList.add("show");
   navigator.clipboard.writeText(text);
   setTimeout(function() {
