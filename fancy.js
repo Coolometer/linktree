@@ -4,7 +4,7 @@ function myFunction(e) {
   var info = e.target
   
   if (!info.classList.contains("info")){
-    info = info.querySelector(".info").target;
+    info = info.querySelectorAll(".info")[0];
   }
   
   console.log(info);
