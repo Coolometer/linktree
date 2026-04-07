@@ -125,6 +125,7 @@
 }
 
 .popup {
+  pointer-events: none;
   position:relative;
   display: inline-block;
 }
