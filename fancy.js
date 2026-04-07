@@ -9,7 +9,7 @@ function myFunction() {
 }, 2000);
 }
 window.onload = function () {
-  var elements = document.getElementsByClass("clickable");
+  var elements = document.getElementsByClassName("clickable");
   elements.foreach((element)=>{console.log("Element: ");console.log(element);
     element.addEventListener("click", myFunction);
                               });
