@@ -1,10 +1,10 @@
-function myFunction() {
-  console.log(this);
+function myFunction(e) {
+  console.log(e)
   var popup = document.getElementById("myPopup");
-  var elements = this.querySelector(".info");
+  var elements = a.querySelectorAll(".info");
   console.log(elements);
   popup.classList.add("show");
-  var text = Array.from(elements)[0].textContent;
+  var text = elements.first.firstChild.textContent;
   popup.classList.add("show");
   navigator.clipboard.writeText(text);
   setTimeout(function() {
