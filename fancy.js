@@ -1,15 +1,19 @@
 function myFunction(e) {
   console.log(e)
   var popup = document.getElementById("myPopup");
-  var elements = e.target.querySelectorAll(".info");
-  console.log(elements);
+  var info = e.target
+  
+  if (!info.classList.contains("info")){
+    info = info.querySelector(".info").target;
+  }
+  
+  console.log(info);
   popup.classList.add("show");
-  var text = elements.firstChild.textContent;
-  popup.classList.add("show");
-  navigator.clipboard.writeText(text);
+  
+  navigator.clipboard.writeText(info.textContent);
   setTimeout(function() {
-  popup.classList.remove("show");
-}, 2000);
+    popup.classList.remove("show");
+  }, 2000);
 }
 window.onload = function () {
   var elements = document.getElementsByClassName("clickable");
