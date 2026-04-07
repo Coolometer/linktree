@@ -9,7 +9,7 @@
       margin:0;
       background:#000;
       color:var(--text);
-      font-family: Papyrus, Copperplate, fantasy, Garamond, serif;
+      font-family: Papyrus, UnifrakturMaguntia, UnifrakturCook, Fraktur, Textura, Copperplate, fantasy, Garamond, serif;
       display:flex;
       align-items:center;
       justify-content:center;
