@@ -1,4 +1,5 @@
 function myFunction() {
+  console.log(element);
   var popup = document.getElementById("myPopup");
   var text = this.querySelector(".info")[0];
   popup.classList.add("show");
@@ -9,6 +10,8 @@ function myFunction() {
 }
 window.onload = function () {
   var elements = document.getElementsByClass("clickable");
-  elements.foreach((element)=>element.addEventListener("click", myFunction););
+  elements.foreach((element)=>{console.log("Element: ");console.log(element);
+    element.addEventListener("click", myFunction);
+                              });
   
 };
