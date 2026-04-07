@@ -1,13 +1,7 @@
-function myFunction(e) {
-  console.log(e)
-  var popup = document.getElementById("myPopup");
-  var info = e.target
-  
-  if (!info.classList.contains("info")){
-    info = info.querySelectorAll(".info")[0];
-  }
-  
+function myFunction(info) {
   console.log(info);
+  var popup = document.getElementById("myPopup");
+  info = info.querySelectorAll(".info")[0];
   popup.classList.add("show");
   
   navigator.clipboard.writeText(info.textContent);
@@ -18,7 +12,7 @@ function myFunction(e) {
 window.onload = function () {
   var elements = document.getElementsByClassName("clickable");
   Array.from(elements).forEach((element)=>{console.log("Element: ");console.log(element);
-    element.addEventListener("click", myFunction);
+    element.addEventListener("click", ()=> myFunction(element));
                               });
   
 };
