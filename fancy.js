@@ -1,7 +1,10 @@
 function myFunction() {
   console.log(this);
   var popup = document.getElementById("myPopup");
-  var text = this.querySelector(".info")[0];
+  var elements = this.querySelector(".info");
+  console.log(elements);
+  popup.classList.add("show");
+  var text = elements[0];
   popup.classList.add("show");
   navigator.clipboard.writeText(text);
   setTimeout(function() {
