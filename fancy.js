@@ -1,7 +1,7 @@
 function myFunction(e) {
   console.log(e)
   var popup = document.getElementById("myPopup");
-  var elements = a.querySelectorAll(".info");
+  var elements = e.target.querySelectorAll(".info");
   console.log(elements);
   popup.classList.add("show");
   var text = elements.first.firstChild.textContent;
