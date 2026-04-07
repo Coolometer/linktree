@@ -10,7 +10,7 @@ function myFunction() {
 }
 window.onload = function () {
   var elements = document.getElementsByClassName("clickable");
-  elements.foreach((element)=>{console.log("Element: ");console.log(element);
+  elements.forEach((element)=>{console.log("Element: ");console.log(element);
     element.addEventListener("click", myFunction);
                               });
   
