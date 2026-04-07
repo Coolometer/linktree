@@ -1,5 +1,5 @@
 function myFunction() {
-  console.log(element);
+  console.log(this);
   var popup = document.getElementById("myPopup");
   var text = this.querySelector(".info")[0];
   popup.classList.add("show");
