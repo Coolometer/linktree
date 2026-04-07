@@ -7,4 +7,4 @@ function myFunction() {
 }, 2000);
 }
 
-document.onload(document.getElementById("clickable").addEventListener("click", myFunction));
+window.onload(document.getElementById("clickable").addEventListener("click", myFunction));
